@@ -1,0 +1,13 @@
+fileLocation: log.txt
+topic: sample_topic
+http: http://devtools.com/message/
+keywords:
+  - 
+    text: halt
+    message: Sample text
+    publisherType: topic
+    topic: topic1
+
+  - 
+    text: exception
+    publisherType: http

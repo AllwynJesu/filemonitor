@@ -1,0 +1,10 @@
+#Eclipse related files and directories
+.classpath
+.project
+.settings
+.metadata
+
+#Build directories
+/target
+*/target
+
