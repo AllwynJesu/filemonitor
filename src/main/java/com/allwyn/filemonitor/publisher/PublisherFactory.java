@@ -12,7 +12,7 @@ public class PublisherFactory {
 	Publisher publisher = null;
 	if (PublisherType.TOPIC.equals(publisherType)) {
 	    
-	} else if (PublisherType.HTTP.equals(publisherType)) {
+	} else if (PublisherType.REST.equals(publisherType)) {
 	    //TODO : Complete construction of http publisher
 	}
 	return publisher;

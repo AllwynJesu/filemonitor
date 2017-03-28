@@ -1,13 +1,14 @@
 fileLocation: log.txt
-topic: sample_topic
-http: http://devtools.com/message/
+defaultPublisherType: TOPIC # Publisher types are case sensitive
+defaultTopicName: sample_topic
+defaultRestEndpoint: http://devtools.com/message/
 keywords:
   - 
     text: halt
     message: Sample text
-    publisherType: topic
-    topic: topic1
+    publisherType: TOPIC
+    topicName: topic1
 
   - 
     text: exception
-    publisherType: http
+    publisherType: REST

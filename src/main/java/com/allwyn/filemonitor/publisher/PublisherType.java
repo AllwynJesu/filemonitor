@@ -8,7 +8,7 @@ package com.allwyn.filemonitor.publisher;
  */
 public enum PublisherType {
 
-    TOPIC("topic"), HTTP("http");
+    TOPIC("topic"), REST("rest");
 
     private String type;
 
@@ -16,22 +16,7 @@ public enum PublisherType {
 	this.type = type;
     }
 
-    public PublisherType getType(String type) {
-	PublisherType pubType;
-	switch (type) {
-	case "topic":
-	    pubType = PublisherType.TOPIC;
-	    break;
-	case "http":
-	    pubType = PublisherType.HTTP;
-	    break;
-	default:
-	    pubType = PublisherType.TOPIC;
-	    break;
-	}
-	return pubType;
-    }
-
+    @Override
     public String toString() {
 	return this.type;
     }

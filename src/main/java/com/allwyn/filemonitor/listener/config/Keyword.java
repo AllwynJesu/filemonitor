@@ -1,5 +1,7 @@
 package com.allwyn.filemonitor.listener.config;
 
+import com.allwyn.filemonitor.publisher.PublisherType;
+
 /**
  * POJO class for holding data related to keyword
  * 
@@ -10,17 +12,10 @@ public class Keyword {
 
     private String text;
     private String message;
-    private String publisherType;
-    private String queue;
+    private PublisherType publisherType;
+    private String topicName;
+    private String restEndPoint;
     private String pattern;
-
-    public String getMessage() {
-	return message;
-    }
-
-    public void setMessage(String message) {
-	this.message = message;
-    }
 
     public String getText() {
 	return text;
@@ -30,12 +25,36 @@ public class Keyword {
 	this.text = text;
     }
 
-    public String getQueue() {
-	return queue;
+    public String getMessage() {
+	return message;
     }
 
-    public void setQueue(String queue) {
-	this.queue = queue;
+    public void setMessage(String message) {
+	this.message = message;
+    }
+
+    public PublisherType getPublisherType() {
+	return publisherType;
+    }
+
+    public void setPublisherType(PublisherType publisherType) {
+	this.publisherType = publisherType;
+    }
+
+    public String getTopicName() {
+	return topicName;
+    }
+
+    public void setTopicName(String topicName) {
+	this.topicName = topicName;
+    }
+
+    public String getRestEndPoint() {
+	return restEndPoint;
+    }
+
+    public void setRestEndPoint(String restEndPoint) {
+	this.restEndPoint = restEndPoint;
     }
 
     public String getPattern() {
@@ -44,14 +63,6 @@ public class Keyword {
 
     public void setPattern(String pattern) {
 	this.pattern = pattern;
-    }
-
-    public String getPublisherType() {
-	return publisherType;
-    }
-
-    public void setPublisherType(String publisherType) {
-	this.publisherType = publisherType;
     }
 
 }
